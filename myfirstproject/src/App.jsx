@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Demo from './Component/Demo';
 
 function App() {
  function call() {
@@ -19,7 +20,7 @@ function App() {
  <button onClick={call}>Click </button>
  <button onClick={apple}>apple</button>
  <button onClick={banana}>banana </button>
-   
+   <Demo></Demo>
     </div>
   )
 }
