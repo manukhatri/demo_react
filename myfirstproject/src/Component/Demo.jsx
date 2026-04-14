@@ -1,32 +1,18 @@
+import { useState } from 'react'
 function Demo() {
-    let Data="demo";
-    function Fun()
-    {
-        alert("FUNCTION CALL");
-    }
-        const Fruit=(name)=>
-        {
-            alert(name);
-        }
-    function updata()
-    {
-        Data="Example";
-        alert(Data);
+    const [data,setdata]=useState("Hello");
+    
+    function A(){
+        setdata("Changed data");
     }
     return(
-        <>
-        <h1>Example of arrow function</h1>
-        <button onClick={Fun}>click to call function</button> 
-        <button onClick={()=>Fruit("MANU")}>arrow function</button> 
-        <button onClick={()=>Fruit("click on apple")}>apple</button> 
-        <button onClick={()=>Fruit("click on banana")}>banana</button> 
-        <button onClick={()=>Fruit("click on banana")}>banana</button> 
-        <button onClick={()=>Fruit("click on banana")}>banana</button> 
-          <button onClick={Data}>demo</button> 
-         <button onClick={updata}>click on data</button>
-         
-        
 
+    <>
+    
+         <h1>State of variable:</h1>
+         <h1>{data}</h1>
+        <button onClick={A}>click</button>
+ 
         
 
 
