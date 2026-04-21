@@ -2,8 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Demo from './Component/Demo';
-import Assignment1 from './Component/Assignment1'
+import Demo from './Assignment/Demo';
+import Assignment1 from './Assignment/Assignment1'
 function App() {
  
   return (
